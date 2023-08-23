@@ -72,7 +72,7 @@ body {
   text-align: start;
 }
 
-.form-container input {
+.form-input {
   all: unset;
   box-sizing: border-box;
   width: 100%;
@@ -118,4 +118,13 @@ body {
   font-weight: 400;
   margin-left: 1.5rem;
   display: none;
+}
+
+.error-show {
+  display: block;
+}
+
+.error-input {
+  border: 2px solid var(--color-red-error);
+  opacity: 1;
 }
