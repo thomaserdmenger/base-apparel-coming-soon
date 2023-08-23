@@ -19,9 +19,17 @@ body {
   align-items: center;
 }
 
+.background-container {
+  background: linear-gradient(150deg, #fff 0%, #fff4f4 100%);
+}
+
 .logo-container {
   margin: 1.94rem 0 2rem 2rem;
   align-self: flex-start;
+}
+
+.logo-container img {
+  width: 100px;
 }
 
 .hero-image-container {
@@ -70,6 +78,7 @@ body {
 .form-container {
   position: relative;
   text-align: start;
+  margin-bottom: 5.75rem;
 }
 
 .form-input {
