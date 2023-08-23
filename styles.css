@@ -14,21 +14,25 @@
 body {
   min-height: 100dvh;
   font-family: "Josefin Sans", sans-serif;
+}
+
+.background-container {
+  background: linear-gradient(150deg, #fff 0%, #fff4f4 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.background-container {
-  background: linear-gradient(150deg, #fff 0%, #fff4f4 100%);
-}
-
-.logo-container {
+.logo-container-one {
   margin: 1.94rem 0 2rem 2rem;
   align-self: flex-start;
 }
 
-.logo-container img {
+.logo-container-two {
+  display: none;
+}
+
+.logo-container-one img {
   width: 100px;
 }
 
@@ -38,8 +42,12 @@ body {
   place-items: center;
 }
 
-.hero-image-container img {
+.hero-image-one {
   width: 100%;
+}
+
+.hero-image-two {
+  display: none;
 }
 
 .content-container {
@@ -136,4 +144,88 @@ body {
 .error-input {
   border: 2px solid var(--color-red-error);
   opacity: 1;
+}
+
+@media only screen and (min-width: 1300px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .background-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .logo-container-one {
+    display: none;
+  }
+
+  .logo-container-two {
+    display: block;
+    margin-bottom: 8.5056rem;
+  }
+
+  .logo-container-two img {
+    width: 158px;
+  }
+
+  .hero-image-container {
+    width: 60%;
+    display: inline-block;
+    margin-left: 10.3125rem;
+  }
+
+  .hero-image-one {
+    display: none;
+  }
+
+  .hero-image-two {
+    display: block;
+    min-width: 100%;
+    margin: 0;
+  }
+
+  .content-container {
+    width: 40%;
+    margin: 0;
+    margin-left: 10.3125rem;
+    margin-top: 4.6819rem;
+    text-align: start;
+  }
+
+  .content-heading {
+    font-size: 4rem;
+    line-height: 64px;
+    letter-spacing: 17.321px;
+  }
+
+  .content-heading span {
+    font-size: 4rem;
+    line-height: 71px;
+    letter-spacing: 17.321px;
+  }
+
+  .content-container p {
+    margin: 1rem 0 2.5rem 0;
+    font-size: 1rem;
+    line-height: 28px;
+  }
+
+  .form-input {
+    height: 56px;
+  }
+
+  .form-submit-button {
+    height: 56px;
+    width: 100px;
+    border-radius: 100px;
+  }
+
+  .input-error-image {
+    top: 15px;
+    right: 110px;
+  }
 }
